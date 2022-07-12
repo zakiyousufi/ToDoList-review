@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  background-color: rgb(46, 46, 46);
+  color: rgb(255, 255, 255);
+}
+
+header h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 25px;
+}
+
+.to-do-list {
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(255, 240, 240);
+  width: 50%;
+}
+
+.to-do-list h2 {
+  padding: 2%;
+  color: gray;
+  font-size: 1.5rem;
+  border-bottom: 1px solid gray;
+}
+
+.container h2 {
+  font-size: 0.7rem;
+}
+
+#addPart {
+  border-bottom: 1px solid gray;
+}
+
+i {
+  font-size: 1rem;
+}
+
+a:hover,
+i:hover {
+  color: rgb(9, 177, 255);
+  cursor: pointer;
+}
+
+#inputAdd {
+  width: 93%;
+  height: 3rem;
+  font-size: 1rem;
+  background: rgb(237, 236, 236);
+  border: none;
+  padding: 2%;
+}
+
+.task {
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  font-size: 0.5rem;
+  color: gray;
+  height: 3.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.task:focus-within,
+.task:focus-within input {
+  background-color: rgb(172, 247, 248);
+}
+
+.taskCheck {
+  width: 7%;
+}
+
+.taskInput {
+  width: 85%;
+  border: none;
+  background: rgb(252, 238, 238);
+  height: 97%;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.fa-trash-can {
+  visibility: hidden !important;
+}
+
+.task:focus-within .fa-trash-can {
+  visibility: visible !important;
+}
+
+.task:focus-within .drop {
+  display: none !important;
+}
+
+#deletCompleted {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#deletCompleted:hover {
+  cursor: pointer;
+}
+
+.completedTaskBtn {
+  text-align: center;
+  padding: 1rem;
+}
+
+.completedTask {
+  text-decoration: line-through;
+}
